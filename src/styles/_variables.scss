@@ -1,0 +1,82 @@
+//fuentes
+//fuente estándar roboto
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/Roboto-Regular.ttf);
+}
+//fuente sofisticada playfair
+@font-face {
+    font-family: 'PlayFair';
+    src: url(../assets/PlayfairDisplay-Regular.ttf);
+}
+//ajuste general
+$container-max-width:90%;
+
+/*colores*/
+//backgrounds 
+$background-header: #6F1D87;
+$background-gradient-main: linear-gradient(90deg, rgba(131,58,180,1) 
+0%, rgba(208,134,109,1) 50%, rgba(252,176,69,1) 100%);
+$background-footer: #1A1A1A;
+$background-color-btn-morado: #822DBF;
+$background-color-btn-naranja: #F9894D;
+$background-color-feedback:#f3f3f3;
+//backgrounds hover
+$background-color-btn-morado-hover: #9F45D7;
+$background-color-btn-naranja-hover: #E9763B;
+$background-color-hover-cards: #F3E7FC;
+$background-color-hover-cards2: #FFE9D6;
+//colors
+$color-white: #FFFFFF;
+$color-nav-a: #EAEAEA;
+$color-nav-a-hover: #6BC1FF;
+$color-p-generic:#E0E0E0;
+$color-card-h3: #9F45D7;
+$color-feedback-h4: #9F45D7;;
+$color-card-p: #5C5C5C;
+$color-arrow:#333;
+$color-arrow-hover:#555;
+$background-color-contactform: #FFFFFF;
+$color-border-contactform: #EAEAEA;
+$color-contactform-p: #5C5C5C;
+$color-footer-p: #EAEAEA;
+$color-footer-a: #EAEAEA;
+$color-footer-a-hover: #6BC1FF;
+/* tamaños */
+$size-xs: 0.48rem;       // Muy pequeño, detalles secundarios
+$size-s: 0.80rem;            // Tamaño pequeño, texto auxiliar o botones
+$size-p: 1rem;             // Texto estándar
+$size-h4: 1.25rem;               // Subencabezados o títulos secundarios
+$size-h3: 1.5rem;                // Títulos terciarios
+$size-h2: 2rem;                  // Títulos secundarios
+$size-h1: 2.5rem;                // Título principal
+$size-flechas:2rem;
+/* paddings */
+$padding-5percent:5%;
+$padding-2percentt:2%;
+$padding-15px:15px;
+
+$padding-20-px:20px;
+$padding-15-px:15px;
+$padding-10-px:10px;
+
+/* margins */
+$margin-right-li-header:1.5em;
+$margin-bottom-sobremi:1.10em;
+
+
+/* widths */
+//hacer width logos
+$width-for-cards:300px;
+
+/* gaps */
+$gap-for-cards:2rem;
+
+/* border-radius */
+$border-radius-general:8px;
+
+$breakpoints:(
+    "medium":"max-width: 760px"
+);
+
+

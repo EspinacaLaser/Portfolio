@@ -1,0 +1,55 @@
+Claro! Aquí tienes una lista de todos los códigos de color mencionados para cada elemento, organizados por categoría:
+
+Navegador (enlaces)
+Texto: #FFFFFF (blanco) o #EAEAEA (gris claro).
+Hover/Activo: #6BC1FF (azul claro vibrante).
+
+Encabezados
+Color: #FFFFFF (blanco) o #D68494 (tono derivado del gradiente).
+
+Párrafos
+Color: #E0E0E0 (gris claro).
+
+Botones
+Fondo del botón: #822DBF (morado oscuro) o #F9894D (naranja cálido).
+Texto del botón: #FFFFFF (blanco).
+
+
+
+
+Hover en las cards
+Fondo de la card: Cambia de blanco puro (#FFFFFF) a un tono suave derivado del gradiente, por ejemplo:
+
+Tono claro del morado: #F3E7FC.
+Tono claro del naranja: #FFE9D6.
+Esto da un efecto de interacción sutil y elegante.
+Encabezados de las cards: Aumenta ligeramente la intensidad o el brillo del color original:
+
+Morado (#822DBF) → #9F45D7.
+Naranja (#F9894D) → #FF9A5A.
+Párrafos: Mantén el gris oscuro (#5C5C5C) para evitar ruido visual.
+
+Fondo del botón: Cambia a su color de hover:
+
+Morado (#822DBF) → #9F45D7.
+Azul (#6BC1FF) → #4BAFEA.
+Texto del botón: Mantén el blanco (#FFFFFF) para legibilidad.
+
+
+
+
+
+
+
+Formulario de contacto
+Fondo: #FFFFFF (blanco).
+Bordes: #EAEAEA (gris claro).
+Texto: #5C5C5C (gris oscuro).
+
+Botones de envío: Igual que los botones generales:
+Fondo: #822DBF (morado oscuro) o #F9894D (naranja cálido).
+Texto: #FFFFFF (blanco).
+
+Header y Footer
+Fondo del Header: #6F1D87 (morado oscuro derivado del gradiente).
+Fondo del Footer: #1A1A1A (gris oscuro).

@@ -1,0 +1,37 @@
+// Archivo _header.scss
+
+@use "globals" as *;
+
+header {
+  background-color: $background-header;
+
+  .header-nav {
+    nav {
+      font-size: $size-h3;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          display: inline;
+          margin-right: $margin-right-li-header;
+
+          @include respond-to("medium") {
+            text-align: center;
+            padding-right: $padding-10-px;
+            margin-right: 0;
+          }
+
+          a {
+            text-decoration: none;
+            color: $color-nav-a;
+
+            &:hover {
+              color: $color-nav-a-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+// Archivo _content.scss
+
+@use "globals" as *;
+
+main {
+  // Estilo de gradiente general
+  background: $background-gradient-main;
+
+  // Estilos para la sección sobre mí
+  #sobremi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: $size-h1;
+      font-family: 'PlayFair', sans-serif;
+      margin-bottom: $margin-bottom-sobremi;
+      color: $color-white;
+    }
+
+    p {
+      max-width: 1000px;
+      width: 100%;
+      color: $color-p-generic;
+      font-size: $size-p;
+      font-family: 'Roboto', Arial, sans-serif;
+      margin-bottom: 50px;
+    }
+
+    button {
+      padding: $padding-15px $padding-5percent;
+      background-color: $background-color-btn-morado;
+      border-radius: $border-radius-general;
+      margin-bottom: 40px;
+      border: none;
+
+      &:hover {
+        background-color: $background-color-btn-morado-hover;
+      }
+
+      a {
+        color: $color-white;
+        font-size: $size-h4;
+        text-decoration: none;
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+    }
+  }
+
+  #skills {
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+
+    h2 {
+      font-family: 'PlayFair', sans-serif;
+      color: $color-white;
+      font-size: $size-h2;
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: $gap-for-cards;
+
+      .project-card {
+        background: $color-white;
+        border: 1px solid;
+        border-radius: $border-radius-general;
+        padding: $padding-5percent;
+        width: $width-for-cards;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+          background-color: $background-color-hover-cards;
+        }
+
+        h3 {
+          font-size: $size-h3;
+          color: $color-card-h3;
+          font-family: 'PlayFair', sans-serif;
+        }
+
+        p {
+          font-family: 'Roboto', Arial, sans-serif;
+          font-size: $size-p;
+          margin: 0.5rem 0 15px;
+          color: $color-card-p;
+        }
+      }
+    }
+  }
+
+  // Estilos para la sección del feedback
+  #feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    h2 {
+      font-family: 'PlayFair', sans-serif;
+      color: $color-white;
+      font-size: $size-h2;
+    }
+
+    .glide {
+      width: 80%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .glide__slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: $background-color-feedback;
+      padding: $padding-20-px;
+      border-radius: $border-radius-general;
+      margin-bottom: $padding-20-px;
+
+      h4 {
+        font-family: 'PlayFair', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        color: $color-feedback-h4;
+      }
+
+      p {
+        font-size: 1.2em;
+        font-family: 'Roboto', Arial, sans-serif;
+        max-width: 70%;
+      }
+    }
+
+    .glide__arrows {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 10;
+      transform: translateY(-50%);
+      padding: 20px;
+    }
+
+    .glide__arrow {
+      background: none;
+      border: none;
+      font-size: $size-flechas;
+      color: $color-arrow;
+      transition: transform 0.4s, color 0.4s;
+
+      &:hover {
+        color: $color-arrow-hover;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  // Estilos para el formulario de contacto
+  #contactoformulario {
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+
+    h2 {
+      font-family: 'PlayFair', sans-serif;
+      color: $color-white;
+      font-size: $size-h2;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      padding: $padding-15-px;
+
+      .form-group {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $padding-10-px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: $padding-10-px;
+        font-size: $size-p;
+        color: $color-white;
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: $padding-10-px;
+        border-radius: $border-radius-general;
+        border: $color-border-contactform;
+        font-size: $size-p;
+        margin-bottom: $padding-10-px;
+        background-color: $background-color-contactform;
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      button {
+        padding: $padding-15px;
+        background-color: $background-color-btn-naranja;
+        color: white;
+        border: none;
+        border-radius: $border-radius-general;
+        cursor: pointer;
+        margin-bottom: 40px;
+        font-size: $size-p;
+        font-family: 'Roboto', Arial, sans-serif;
+
+        &:hover {
+          background-color: $background-color-btn-naranja-hover;
+        }
+      }
+    }
+  }
+}

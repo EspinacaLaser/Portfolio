@@ -1,0 +1,10 @@
+// Archivo main.scss
+
+@use "globals" as *;
+@use "layout";
+@use "header";
+@use "footer";
+@use "content";
+
+// Fuente
+@import "font-awesome/css/font-awesome.min.css";

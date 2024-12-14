@@ -1,0 +1,64 @@
+// Archivo _footer.scss
+
+@use "globals" as *;
+
+footer {
+  background-color: $background-footer;
+  font-family: 'Roboto', Arial, sans-serif;
+
+  .container {
+    @include container;
+  }
+
+  .footer-content {
+    .row {
+      @include respond-to("medium") {
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-contacto {
+        p {
+          font-size: $size-p;
+          margin-bottom: $padding-10-px;
+          color: $color-footer-p;
+
+          a {
+            color: $color-footer-a;
+            text-decoration: none;
+
+            &:hover {
+              color: $color-footer-a-hover;
+            }
+          }
+        }
+
+        @include respond-to("medium") {
+          margin-bottom: $padding-15-px;
+        }
+      }
+
+      .footer-rrss {
+        a {
+          display: inline-block;
+          font-size: $size-p;
+          color: $color-footer-a;
+          text-decoration: none;
+          padding-right: $padding-10-px;
+
+          &:hover {
+            color: $color-footer-a-hover;
+          }
+        }
+
+        @include respond-to("medium") {
+          a {
+            display: block;
+            margin-right: 0;
+            margin-bottom: $padding-10-px;
+          }
+        }
+      }
+    }
+  }
+}
